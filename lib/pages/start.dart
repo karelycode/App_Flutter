@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:segundaapp/pages/fotos.dart';
+import 'package:segundaapp/pages/listadatos.dart';
 
-//import 'listadatos.dart';
 
 class Start extends StatefulWidget{
   @override
@@ -12,7 +12,7 @@ class Start extends StatefulWidget{
 class _StartApp extends State<Start>{
   int _selectedIndex=0;
   final List<Widget> _children=[
-    Fotos(),Fotos(),
+    Fotos(),ListaDatos(),
   ];
   void _onItemTapped(int index){
     setState(() {

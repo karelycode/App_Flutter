@@ -22,8 +22,7 @@ class MiFormulario extends State<Formulario> {
 
   Datos dat = Datos("", "", "", "");
 
-  Future <void> guardarDatos(String nombre, String desc, String precio,
-      String imagen) async {
+  Future <void> guardarDatos(String nombre, String desc, String precio, String imagen) async {
     Future.delayed(Duration(seconds: 7), () async {
       final datos = await FirebaseFirestore.instance.collection('herr');
       return datos.add({
@@ -39,7 +38,7 @@ class MiFormulario extends State<Formulario> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Datos de los juegos"),
+        title: Text("Datos de las herramientas"),
         backgroundColor: Color.fromRGBO(200, 200, 200, .9),
       ),
       body: Container(
